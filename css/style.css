@@ -38,23 +38,24 @@ input {
 
 form>button{
     padding: 10px;
-    background-color:hsl(220, 15%, 169%);
-    color: white;
+    float: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(224, 50, 50);
     border: 1px solid black;
     border-radius: 10px;
     
 }
 
 #reset-btn {
-    float: inline-end;
+    float: inline-left;
     background-color: rgb(29, 143, 40);
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 footer {
     text-align: center;
-    background-color: hsl(220, 15%, 169%);
-    color: white;
+    background-color: rgb(220, 15, 169);
+    color: rgb(255, 255, 255);
     font-size: smaller;
     font-style: italic;
 }
