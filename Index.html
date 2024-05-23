@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Kalkulator Segitiga</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <style>
+            header { border-color: cornflowerblue; }
+        </style>
+        <h1 style="text-align:center">Welcome to MyCalculator</h1>
+        <section>           
+            <p style="text-align:center">
+                Hai Sobat, Selamat datang di Kalkulator Matematika Segitiga<br>
+                Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar
+            </p>
+        </section>
+    </header>
+    <section>
+        <div class="section-content">
+            <h4> Segitiga</h4>
+        </div>
+
+        <button type="button" id="Switch-keliling" onclick="hideOrShow()"><u>Switch Keliling Segitiga</u></button> 
+        <Section id="luas-section">
+        <!-- Luas Segitiga -->
+        <section>
+            <div class="section-content">
+                <h2> Luas Segitiga</h2>
+            </div>
+
+            <div class="formula-img">
+                <br><img 
+                src="assets/Segitiga.PNG"></br>
+            </div>
+            
+            <p>
+                Rumus Luas Segitiga yaitu :
+                <p style="text-align:center">L = 1/2 x a x t</p>
+                Dimana :<br>
+                L = Luas<br>
+                a = Panjang Alas<br>
+                t = Tinggi<br>
+            </p>
+        </section>
+            <hr/>
+        <section>
+
+                <h2>Hitung Luas Segitiga</h2>
+
+            <form>
+                <section>
+                    <div>
+                        <label></label><input type="number" id="alas"  placeholder="Panjang Alas"/>
+                    </div><br>
+                    <div>
+                        <label></label><input type="number" id="tinggi"  placeholder="Tinggi"/>
+                    </div>
+                    
+                </section>
+                
+                <b><p id="luas"></p></b>
+                <button type="button" onclick="luas()">Hitung</button> 
+                <button type="reset" id="reset-btn">Reset</button>
+                
+            </form>
+        </section>
+    </section>
+   
+        <section id="keliling-section" style="padding-top: 32px; display:none ;">
+    
+        <!-- Keliling Segitiga -->
+        <section>
+            <div class="section-content">
+                <h2> Keliling Segitiga</h2>
+            </div>
+
+            <div class="formula-img">
+                <br><img 
+                src="assets/Segitiga.PNG"></br>
+            </div>
+            
+            <p>
+                Rumus Keliling Segitiga yaitu :
+                <p style="text-align:center">K = S1 + S2 + S3</p>
+                Dimana :<br>
+                K = Keliling<br>
+                S1 = Sisi a <br>
+                S2 = Sisi b <br>
+                S3 = Sisi c <br>
+            </p>
+        </section>
+    <hr/>
+         <section>
+                <h2>Hitung Keliling Segitiga</h2>
+            
+            <form>
+                <section>
+                    <di>
+                        <label>Sisi 1:</label><input id="sisi_a" placeholder="Sisi a" type="number"/>
+                    </di>
+                    <div>
+                        <label>Sisi 2:</label><input id="sisi_b" placeholder="Sisi b" type="number"/>
+                    </div>
+                    <div>
+                        <label>Sisi 3:</label><input id="sisi_c" placeholder="Sisi c" type="number"/>
+                    </div>
+                </section>
+                <b><p id="keliling"></p></b>
+                <button type="button" onclick="keliling()">Hitung</button> 
+                <button type="reset" id="reset-btn">Reset</button>
+            </form>
+        </section>
+    </section>
+    <script src="js/script.js"></script>
+
+    
+    <br><br><footer>
+    <p>Thank you for Visiting Us and Good Luck!</p>
+    </footer>
+    
+       
+</body>
+</html
